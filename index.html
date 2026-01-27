@@ -124,6 +124,75 @@
 <section class="section">
   <div class="container is-max-desktop content">
     <h2 class="title is-3 has-text-centered">Audio Demo</h2>
+    
+    <p class="has-text-centered subtitle is-5 mb-5">
+      Example: "一闪一闪亮晶晶，满天都是小星星" (Twinkle Twinkle Little Star style)<br>
+      Four different models/pipelines for lyric-to-melody + singing voice synthesis.
+    </p>
+
+    <div class="columns is-centered is-multiline">
+      
+      <!-- Model 1: Step-Audio -->
+      <div class="column is-12-tablet is-6-desktop">
+        <div class="box has-text-centered">
+          <p class="title is-5 mb-2">Step-Audio</p>
+          <p class="subtitle is-6 has-text-grey">(Integrated framework with melody generation)</p>
+          <audio controls style="width: 100%; max-width: 480px; margin: 1rem auto; display: block;">
+            <source src="static/audio/case1_step-audio.wav" type="audio/wav">
+            <source src="static/audio/case1_step-audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+
+      <!-- Model 2: CosyVoice -->
+      <div class="column is-12-tablet is-6-desktop">
+        <div class="box has-text-centered">
+          <p class="title is-5 mb-2">CosyVoice</p>
+          <p class="subtitle is-6 has-text-grey">(LLM-based TTS with singing capability)</p>
+          <audio controls style="width: 100%; max-width: 480px; margin: 1rem auto; display: block;">
+            <source src="static/audio/case1_cosyvoice.wav" type="audio/wav">
+            <source src="static/audio/case1_cosyvoice.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+
+      <!-- Model 3: Lyric2Melody + TechSinger -->
+      <div class="column is-12-tablet is-6-desktop">
+        <div class="box has-text-centered">
+          <p class="title is-5 mb-2">Lyric2Melody + TechSinger</p>
+          <p class="subtitle is-6 has-text-grey">(Technique-controllable SVS)</p>
+          <audio controls style="width: 100%; max-width: 480px; margin: 1rem auto; display: block;">
+            <source src="static/audio/case1_techsinger.wav" type="audio/wav">
+            <source src="static/audio/case1_techsinger.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+
+      <!-- Model 4: Lyric2Melody + DiffSinger -->
+      <div class="column is-12-tablet is-6-desktop">
+        <div class="box has-text-centered">
+          <p class="title is-5 mb-2">Lyric2Melody + DiffSinger</p>
+          <p class="subtitle is-6 has-text-grey">(Diffusion-based baseline)</p>
+          <audio controls style="width: 100%; max-width: 480px; margin: 1rem auto; display: block;">
+            <source src="static/audio/case1_diffsinger.wav" type="audio/wav">
+            <source src="static/audio/case1_diffsinger.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 额外说明 -->
+    <div class="has-text-centered mt-5">
+      <p class="is-size-6 has-text-grey">
+        All generated from the same lyrics without cherry-picking.<br>
+        Listen with headphones for best experience. WAV format for highest fidelity.
+      </p>
+    </div>
   </div>
 </section>
 
