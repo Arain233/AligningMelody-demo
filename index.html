@@ -126,18 +126,34 @@
     <h2 class="title is-3 has-text-centered">Audio Demos</h2>  <!-- 改成复数，更准确 -->
 
     <!-- Case 1 -->
-    <h3 class="title is-4 has-text-centered mt-6">Case 1: 一闪一闪亮晶晶</h3>
+    <h3 class="title is-4 has-text-centered mt-6">Case 1: nothing left look don't get me wrong i know</h3>
     <p class="has-text-centered subtitle is-6 mb-5">
       Four different models/pipelines for lyric-to-melody + singing voice synthesis.
     </p>
+
+    <!-- Ground Truth 放在最上面，居中突出 -->
+    <div class="columns is-centered">
+      <div class="column is-10-tablet is-8-desktop">
+        <div class="box has-text-centered has-background-light">
+          <p class="title is-5 has-text-primary mb-3">Ground Truth (Human Reference)</p>
+          <audio controls style="width: 100%; max-width: 600px; margin: 1.5rem auto; display: block;">
+            <source src="static/audio/gt_en_01.wav" type="audio/wav">
+            <source src="static/audio/case1_gt.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+          <p class="is-size-6 has-text-grey mt-2">Original / human-sung version for comparison</p>
+        </div>
+      </div>
+    </div>
+    
     <div class="columns is-centered is-multiline">
       <!-- Model 1: Step-Audio -->
       <div class="column is-12-tablet is-6-desktop">
         <div class="box has-text-centered">
           <p class="title is-5 mb-3">Step-Audio</p>
-          <p class="subtitle is-6 has-text-grey mt-1 mb-4">(Integrated framework with melody generation)</p>
+          <p class="subtitle is-6 has-text-grey mt-1 mb-4">(Step-by-step audio generation baseline)</p>
           <audio controls style="width: 100%; max-width: 480px; margin: 1.5rem auto; display: block;">
-            <source src="static/audio/stepaudio_1.wav" type="audio/wav">
+            <source src="static/audio/stepaudio_en_01.wav" type="audio/wav">
             <source src="static/audio/stepaudio_1.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
           </audio>
@@ -147,10 +163,10 @@
       <!-- Model 2: CosyVoice -->
       <div class="column is-12-tablet is-6-desktop">
         <div class="box has-text-centered">
-          <p class="title is-5 mb-3">CosyVoice</p>
-          <p class="subtitle is-6 has-text-grey mt-1 mb-4">(LLM-based TTS with singing capability)</p>
+          <p class="title is-5 mb-3">ReLyMe (Improved TeleMelody)</p>
+          <p class="subtitle is-6 has-text-grey mt-1 mb-4">(RelyMe model for melody generation)</p>
           <audio controls style="width: 100%; max-width: 480px; margin: 1.5rem auto; display: block;">
-            <source src="static/audio/cosyvoice_1.wav" type="audio/wav">
+            <source src="static/audio/relyme_en_01.wav" type="audio/wav">
             <source src="static/audio/cosyvoice_1.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
           </audio>
@@ -160,10 +176,10 @@
       <!-- Model 3: Lyric2Melody + TechSinger -->
       <div class="column is-12-tablet is-6-desktop">
         <div class="box has-text-centered">
-          <p class="title is-5 mb-3">Lyric2Melody + TechSinger</p>
-          <p class="subtitle is-6 has-text-grey mt-1 mb-4">(Technique-controllable SVS)</p>
+          <p class="title is-5 mb-3">SongComposer</p>
+          <p class="subtitle is-6 has-text-grey mt-1 mb-4">(Song composition pipeline)</p>
           <audio controls style="width: 100%; max-width: 480px; margin: 1.5rem auto; display: block;">
-            <source src="static/audio/techsinger_1.wav" type="audio/wav">
+            <source src="static/audio/songcomposer_en_01.wav" type="audio/wav">
             <source src="static/audio/techsinger_1.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
           </audio>
@@ -173,10 +189,10 @@
       <!-- Model 4: Lyric2Melody + DiffSinger -->
       <div class="column is-12-tablet is-6-desktop">
         <div class="box has-text-centered">
-          <p class="title is-5 mb-3">Lyric2Melody + DiffSinger</p>
-          <p class="subtitle is-6 has-text-grey mt-1 mb-4">(Diffusion-based baseline)</p>
+          <p class="title is-5 mb-3">Ours (Proposed)</p>
+          <p class="subtitle is-6 has-text-grey mt-1 mb-4">(Aligned with rule-based musical constraints)</p>
           <audio controls style="width: 100%; max-width: 480px; margin: 1.5rem auto; display: block;">
-            <source src="static/audio/diffsinger_1.wav" type="audio/wav">
+            <source src="static/audio/ours_en_01.wav" type="audio/wav">
             <source src="static/audio/diffsinger_1.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
           </audio>
@@ -185,18 +201,34 @@
     </div>
 
     <!-- Case 2 -->
-    <h3 class="title is-4 has-text-centered mt-6">Case 2: Twinkle Twinkle Little Star</h3>
+    <h3 class="title is-4 has-text-centered mt-6">Case 2: 是让我笑到最后</h3>
     <p class="has-text-centered subtitle is-6 mb-5">
       Four different models/pipelines for lyric-to-melody + singing voice synthesis.
     </p>
+
+    <!-- Ground Truth 放在最上面，居中突出 -->
+    <div class="columns is-centered">
+      <div class="column is-10-tablet is-8-desktop">
+        <div class="box has-text-centered has-background-light">
+          <p class="title is-5 has-text-primary mb-3">Ground Truth (Human Reference)</p>
+          <audio controls style="width: 100%; max-width: 600px; margin: 1.5rem auto; display: block;">
+            <source src="static/audio/gt_zh_05.wav" type="audio/wav">
+            <source src="static/audio/case1_gt.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+          <p class="is-size-6 has-text-grey mt-2">Original / human-sung version for comparison</p>
+        </div>
+      </div>
+    </div>
+    
     <div class="columns is-centered is-multiline">
       <!-- 同上四个模型，文件名改成 _5.wav -->
       <div class="column is-12-tablet is-6-desktop">
         <div class="box has-text-centered">
           <p class="title is-5 mb-3">Step-Audio</p>
-          <p class="subtitle is-6 has-text-grey mt-1 mb-4">(Integrated framework with melody generation)</p>
+          <p class="subtitle is-6 has-text-grey mt-1 mb-4">(Step-by-step audio generation baseline)</p>
           <audio controls style="width: 100%; max-width: 480px; margin: 1.5rem auto; display: block;">
-            <source src="static/audio/stepaudio_5.wav" type="audio/wav">
+            <source src="static/audio/stepaudio_zh_05.wav" type="audio/wav">
             <source src="static/audio/stepaudio_5.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
           </audio>
@@ -206,10 +238,10 @@
       <!-- Model 2: CosyVoice -->
       <div class="column is-12-tablet is-6-desktop">
         <div class="box has-text-centered">
-          <p class="title is-5 mb-3">CosyVoice</p>
-          <p class="subtitle is-6 has-text-grey mt-1 mb-4">(LLM-based TTS with singing capability)</p>
+          <p class="title is-5 mb-3">ReLyMe (Improved TeleMelody)</p>
+          <p class="subtitle is-6 has-text-grey mt-1 mb-4">(RelyMe model for melody generation)</p>
           <audio controls style="width: 100%; max-width: 480px; margin: 1.5rem auto; display: block;">
-            <source src="static/audio/cosyvoice_5.wav" type="audio/wav">
+            <source src="static/audio/relyme_en_05.wav" type="audio/wav">
             <source src="static/audio/cosyvoice_5.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
           </audio>
@@ -219,10 +251,10 @@
       <!-- Model 3: Lyric2Melody + TechSinger -->
       <div class="column is-12-tablet is-6-desktop">
         <div class="box has-text-centered">
-          <p class="title is-5 mb-3">Lyric2Melody + TechSinger</p>
-          <p class="subtitle is-6 has-text-grey mt-1 mb-4">(Technique-controllable SVS)</p>
+          <p class="title is-5 mb-3">SongComposer</p>
+          <p class="subtitle is-6 has-text-grey mt-1 mb-4">(Song composition pipeline)</p>
           <audio controls style="width: 100%; max-width: 480px; margin: 1.5rem auto; display: block;">
-            <source src="static/audio/techsinger_5.wav" type="audio/wav">
+            <source src="static/audio/songcomposer_zh_05.wav" type="audio/wav">
             <source src="static/audio/techsinger_5.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
           </audio>
@@ -232,10 +264,10 @@
       <!-- Model 4: Lyric2Melody + DiffSinger -->
       <div class="column is-12-tablet is-6-desktop">
         <div class="box has-text-centered">
-          <p class="title is-5 mb-3">Lyric2Melody + DiffSinger</p>
-          <p class="subtitle is-6 has-text-grey mt-1 mb-4">(Diffusion-based baseline)</p>
+          <p class="title is-5 mb-3">Ours (Proposed)</p>
+          <p class="subtitle is-6 has-text-grey mt-1 mb-4">(Aligned with rule-based musical constraints)</p>
           <audio controls style="width: 100%; max-width: 480px; margin: 1.5rem auto; display: block;">
-            <source src="static/audio/diffsinger_5.wav" type="audio/wav">
+            <source src="static/audio/ours_zh_05.wav" type="audio/wav">
             <source src="static/audio/diffsinger_5.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
           </audio>
